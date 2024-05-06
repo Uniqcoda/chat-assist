@@ -1,0 +1,131 @@
+:root {
+  --border-rad-lg: 15px;
+  --light-text: #fefefe;
+  --dark-text: #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+main {
+  background-color: #000814;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* chatbot elements */
+
+.chatbot-container {
+  background-color: #003049;
+  width: 360px;
+  border-radius: var(--border-rad-lg);
+  padding: 1em;
+}
+
+.chatbot-container > * {
+  padding: 0.5em;
+}
+
+.chatbot-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+.heading {
+  color: var(--light-text);
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+}
+
+.chatbot-conversation-container {
+  height: 450px;
+  overflow-y: scroll;
+  margin: 1em 0;
+}
+
+/* stop ugly scroll bar on some browsers */
+.chatbot-conversation-container::-webkit-scrollbar {
+  display: none;
+}
+
+.chatbot-conversation-container::-moz-scrollbar {
+  display: none;
+}
+
+.speech {
+  padding: 1em;
+  max-width: 240px;
+  color: var(--dark-text);
+  min-width: 90%;
+  border-radius: var(--border-rad-lg);
+  font-size: 1.07em;
+}
+
+.speech:first-child {
+  margin-top: 0;
+}
+
+.speech-ai {
+  background: #06d6a0;
+  border-top-left-radius: 0;
+  margin: 1.2em 1em 0 0;
+}
+
+.speech-human {
+  margin: 1.2em 0 0 1em;
+  background: #fdf0d5;
+  border-top-right-radius: 0;
+}
+
+.chatbot-input-container {
+  display: flex;
+}
+
+input[type="text"],
+button {
+  background-color: transparent;
+  border: 1px solid #586e88;
+  border-radius: var(--border-rad-lg);
+  padding: 1em;
+}
+
+input[type="text"] {
+  color: var(--light-text);
+  width: 100%;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+button {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.send-btn-icon {
+  width: 20px;
+  display: block;
+}
+
+/* text */
+.sub-heading {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+}

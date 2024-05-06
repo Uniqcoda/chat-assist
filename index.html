@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Chat-Assist</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <section class="chatbot-container">
+                <div class="chatbot-header">
+                    <h1 class="heading">Chat-Assist</h1>
+                    <p class="sub-heading">Gym-Buddy</p>
+                </div>
+                <div class="chatbot-conversation-container" id="chatbot-conversation-container">
+                </div>
+                <form id="form" class="chatbot-input-container">
+                    <input name="user-input" type="text" id="user-input" placeholder="Start typing..." required>
+                    <button id="submit-btn" class="submit-btn">
+                            <img
+                                src="images/send.svg"   
+                                class="send-btn-icon"
+                            >
+                    </button>
+                </form>
+            </section>
+        </main>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
