@@ -5,7 +5,7 @@ This is an LLM Chatbot powered by RAG. The tech stack includes Javascript, Langc
 LLM - Large Language Model  
 RAG - Retrieval Augumented Generation  
 
-For a video walkthrough, [click this YouTube link to watch]().
+For a video walkthrough, [click this YouTube link to watch](https://youtube.com/playlist?list=PL4gEDuKXcNsMyegMNyhjVi-mqf0hvoIWu&si=hSJnQGZ4ubcXebwl).
 
 ![image info](./images/thumbnail.png)
 
